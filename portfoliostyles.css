@@ -1,0 +1,247 @@
+/* https://coolors.co/cbdabe-f3f2ba-9bc1bc-000000-1a2f38-3a4e2d-8a0512   = mycolor.space*/
+/* https://coolors.co/5b91a6-6fbf8b-f2bc57-f25244-f2e2ce-263238
+/* https://stackoverflow.com/questions/7948333/css-position-text-in-the-middle-of-the-page*/
+
+/* https://red-route.org/code/image-resizing-calculator - resizing images to the exact*/
+
+/* https://igoradamenko.github.io/awsm.css/css/awsm.css */
+
+  html{
+    font-family: Arial, Helvetica, sans-serif;
+    /* padding: 10px 25px 25px 25px; */
+    background-image:url("Background day.png");
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  body{
+    margin: 0 0 0 0;
+  }
+
+  nav{
+    margin: 0 0 0 0; /* top right bottom left */
+    background: rgba(0, 0, 0, 0.33);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  ul{
+    text-align: right;
+    margin: 0 115px 0 0;
+  }
+
+  li{
+    display: inline;
+    border-spacing: 50px;
+    padding: 10px;
+  }
+
+  .subject{
+    float: left;
+    line-height: 20px;
+    max-width: 100%;
+    font-size:larger;
+    padding: 5px;
+  }
+  
+  .subject-last{
+    float: left;
+    margin-bottom: 19.2px;
+    line-height: 20px;
+    max-width: 100%;
+    font-size:larger;
+    padding: 5px;
+  }
+
+  .subject:before,
+  .subject-last:before{ 
+    content: "- ";
+  }
+
+  li a {
+    color:#263238;
+    text-decoration: solid;
+  }
+  li a:hover {
+    background-color: #5b91a6;
+  }
+
+  main {
+    position:relative;
+    width:800px;
+    margin:auto;
+  }
+
+  div{
+    margin: auto;
+    text-align: center;
+  }
+
+
+  article{
+    box-sizing: border-box;
+    float:left;
+    max-width: 55%;
+    width: 50%;
+    
+  }
+
+  section{
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    margin-top: 20%;
+  }
+
+  h1 {
+    color: #263238;
+    font-size: 80px;
+    font-weight: 600;    
+  }
+
+  h2 {
+    color: #f25244;
+    font-size: 22px; 
+    font-weight: normal;
+    margin-top: -18%;  /* zorgt voor de verticale positie van h2*/
+  }
+
+  h3 {
+    color: #5b91a6;
+    font-size: 16px;
+    font-weight: 200;
+    margin-top: -9%; /* zorgt voor de verticale positie van h3, maar heeft sterke invloed op h2*/
+  }
+
+  h4{
+    color: #263238;
+    font-size: 45px;
+    font-weight: 600;
+    margin: 25px 0 0 0;
+    text-align:center;
+  }
+
+  h5{
+    color: #263238;
+    height: 64px;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 25px 0 25px 0; /* top right bottom left */
+    text-align: left;
+  }
+
+  p{
+    color: #263238;
+    line-height: 20px;
+    max-width: 100%;
+    font-size:larger;
+    text-align: left;
+    clear:both;
+  }
+
+  figure {
+   float: left;
+   margin: 20px 0 20px 0;
+   width: 100%;
+  }
+
+  .introduction{
+    float: right;
+
+    text-align: left;
+    width: 563px;
+  }
+
+  p.introduction{
+    margin: 0;
+  }
+
+  .feed{
+    width:800px;
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr); /* repeat(aantal columns/rows, width column); -> fr = fractie, wat beter is dan 3x33% typen */
+    gap: 10px;
+    
+  }
+
+  .item img{
+    place-self: center;
+    width: 256.7px;
+    height: 256.7px;
+  }
+
+  table, th, td{
+    border: 1px;
+    border-style: solid;
+    padding:0.35em 0.75em;
+    border-collapse: collapse;
+    text-align: left; 
+        
+  }
+
+  table{
+    width: 100%;
+  }
+  
+  th{
+    font-weight: bold;
+  }
+
+ 
+/*
+  CSS voor detailpagina's van projecten
+*/
+
+h4 + img{
+  margin-top: 25px;
+}
+
+.between-p {
+  
+  width: 48%;
+  margin-right: 1%;
+}
+
+/*
+  CSS voor detailpagina's van projecten
+*/
+
+/*
+  CSS voor de Formulier
+*/
+
+label,
+input,
+select {
+  display: inline-block;
+  margin: 10px 0;
+  min-width: 100px;
+  text-align: right;
+}
+
+/*
+  CSS voor de Formulier
+*/
+
+
+  footer{
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    position: relative;
+    width: 100%;
+    margin: 25px 0 0 0;
+    background: rgba(0, 0, 0, 0.33);
+  }
+
+  #image1 {
+    float: fixed;
+    color: #1A2E38;
+    margin: 5px 0 -18px 25px;
+   }
+
+  
