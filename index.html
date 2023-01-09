@@ -2,17 +2,29 @@
 <html>
 <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qikai | Home</title> <!--Deze lijn is verplicht-->
     <link rel="icon" type="image/x-icon" href="photos/favicon1.ico"> <!--Icoon in de browsertab--> <!--in VBC "C:\Users\qikai\Pictures\School\favicon1.ico"-->
-    <link rel="stylesheet" href="portfoliostyles.css" /> <!--Inplaats van <style> ... </style>-->
+    <link rel="stylesheet" href="portfoliostyles2.css" /> <!--Inplaats van <style> ... </style>-->
     <style> footer{ position: fixed;} </style>
 </head>
+
 <body>
 
+
+<!--EVERY IMAGE IN A FIGURE, PUT THE FIGURES IN A CONTAINER WITH A GRID. SET MAX-WIDTH ON 100%
+            MORE 'BORING' LAYOUT BUT IT WORKS, HOPEFULLY.-->
+            <!--USE FLEX--->
     
-<nav>
-    <a href="index.html" ><img id="image1" width= 192.58 height= 75 src="tm_standaardlogo_rgb.png" alt="Thomas More logo"/></a>
-    <ul>
+<header>
+    <!-- Logo -->
+    <a href="index.html" class="logo"><img id="image1" width= 192.58 height= 75 src="tm_standaardlogo_rgb.png" alt="Thomas More logo"/></a>
+    <!-- Hamburger -->
+    <input class="side-menu" type="checkbox" id="side-menu"/>
+    <label class="burger" for="side-menu"><span class="burger-line"></span></label>
+  <nav>
+    <ul class="menu">
         <li><a href="index.html" >Home</a></li>
         <li><a href="portfolio.html" style="color: #5b91a6;">Portfolio</a></li>
         <!-- <li><a href="cv.html">CV</a></li> -->
@@ -21,19 +33,21 @@
         <li><a href="werkplekleren.html" style="color: #f25244;">Werkplekleren</a></li>
         <li><a href="contact.html">Contact</a></li>
     </ul>
-    
-</nav>
+  </nav>  
+</header>
 
 <main>
-    <section>
-        <h1>Qikai Xu</h1>
-        <h3><i>"Zeg ik het goed?" - Iedereen die mij voor het eerst leert kennen</i></h3>
-        <h2>Student Graduaat programmeren</h2>
-    </section>
-
+    <div class="landing">
+      <div class = "box">
+      <div class="titelkaart1"> <h2>Student Graduaat programmeren</h2></div>
+      <div class="titelkaart2"> <h1>Qikai Xu</h1></div>
+      <div class="titelkaart3"> <h3><i>"Zeg ik het goed?" - Iedereen die mij voor het eerst leert kennen</i></h3></div>
+      </div>
+    </div>
 </main>
-<footer>
+
+ <footer>
     These are the feet of the website.
-</footer>
+</footer> 
 </body>
 </html>
